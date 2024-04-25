@@ -1,11 +1,110 @@
 local DiscordLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt"))()
 
-local win = DiscordLib:Window("discord library")
+local win = DiscordLib:Window("Synergy Hub")
 
-local serv = win:Server("Preview", "")
+-- Sección para Arsenal
+local ArsenalTab = win:Tab("Arsenal")
+local ArsenalSection = ArsenalTab:Channel("Arsenal Section")
 
-local btns = serv:Channel("Buttons")
-
-btns:Button("Kill all", function()
-    DiscordLib:Notification("Notification", "Killed everyone!", "Okay!")
+ArsenalSection:Button("Hameware", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/FreeeScripts/FREEHub/main/Loader", true))()
 end)
+
+ArsenalSection:Button("PWNERS V3", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/ArsenalPWNERSV3"))()
+end)
+
+ArsenalSection:Button("Tbao Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoArsenal"))()
+end)
+
+-- Sección para Blox Fruits
+local BloxFruitsTab = win:Tab("Blox Fruits")
+local BloxFruitsSection = BloxFruitsTab:Channel("Blox Fruits Section")
+
+BloxFruitsSection:Button("Hohohub (Key)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
+end)
+
+BloxFruitsSection:Button("Perd Hub (Key)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/PerdHub/Blosfruitscript/main/PerdLoader"))()
+end)
+
+BloxFruitsSection:Button("Xero Hub (Key)", function()
+    getgenv().Team = "Marines -- Pirates/Marines"
+    getgenv().Fix_Lag = true -- true/false
+    loadstring(game:HttpGet("https://xerohub.click/script/main.lua"))()
+end)
+
+BloxFruitsSection:Button("Maris Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/marisdeptrai/Script-Free/main/Maris-Hub.lua"))()
+end)
+
+BloxFruitsSection:Button("MBMX Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/any/main/mbmxhub/0135"))()
+end)
+
+BloxFruitsSection:Button("Redz Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+end)
+
+BloxFruitsSection:Button("Slimex Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Slimexiuem/Slimexhub/main/Slimex-hub"))()
+end)
+
+BloxFruitsSection:Button("Speed Hub X", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ahmadsgamer2/SpeedHubX/main/SpeedHubX"))()
+end)
+
+BloxFruitsSection:Button("Winter Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Yatsuraa/Yuri/main/WinharHuB.lua"))()
+end)
+
+-- Sección para Da Hood
+local DaHoodTab = win:Tab("Da Hood")
+local DaHoodSection = DaHoodTab:Channel("Da Hood Section")
+
+DaHoodSection:Button("SwagMode V2", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002"))()
+end)
+
+DaHoodSection:Button("Faded", function()
+    _G.Toggles = "V" -- Puedes poner cualquier tecla
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
+end)
+
+-- Sección para Flee The Facility
+local FleeTab = win:Tab("Flee The Facility")
+local FleeSection = FleeTab:Channel("Flee The Facility Section")
+
+FleeSection:Button("FTFHAX", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LeviTheOtaku/roblox-scripts/main/FTFHAX.lua", true))()
+end)
+
+FleeSection:Button("Infinity Hub", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Aboahaogsigsigaivva/__Scripts/__Main/__Code/__FleeTheFacility.lua'))()
+end)
+
+-- Sección para King Legacy
+local KingTab = win:Tab("King Legacy")
+local KingSection = KingTab:Channel("King Legacy Section")
+
+KingSection:Button("DookDek (Key)", function()
+    repeat wait() until game:IsLoaded()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/DookDekDEE/Hyper/main/script.lua"))()
+end)
+
+-- Sección de Créditos
+local CredTab = win:Tab("Credits")
+local CredSection = CredTab:Channel("Credits")
+
+CredSection:Label("insomne_yoss#0000 Para reportar bugs.")
+CredSection:Label("Servidor de soporte: https://discord.gg/GxMwv76HSC")
+
+CredSection:Button("Destroy UI", function()
+    win:Close()
+end)
+
+win:Server("Preview", "")
+
+DiscordLib:Init() -- Final de la biblioteca de interfaz de usuario
