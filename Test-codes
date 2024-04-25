@@ -1,0 +1,15 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/IreXion-UI-Library/main/IreXion%20UI%20Library"))()
+
+local Gui = Library:AddGui({
+    Title = {"IreXion", "UI Library"},
+    ThemeColor = Color3.fromRGB(0, 255, 0),
+    ToggleKey = Enum.KeyCode.RightShift,
+})
+
+local Tab = Gui:AddTab("Blox Fruits")
+
+local Category = Tab:AddCategory("Maris Hub")
+
+local Button = Category:AddButton("Maris Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/marisdeptrai/Script-Free/main/Maris-Hub.lua"))()
+end)
