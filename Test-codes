@@ -1,20 +1,11 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/IreXion-UI-Library/main/IreXion%20UI%20Library"))()
+local DiscordLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt"))()
 
-local Gui = Library:AddGui({
-    Title = {"IreXion", "UI Library"},
-    ThemeColor = Color3.fromRGB(0, 255, 0),
-    ToggleKey = Enum.KeyCode.RightShift,
-})
+local win = DiscordLib:Window("discord library")
 
-local Tab = Gui:AddTab("Blox Fruits")
+local serv = win:Server("Preview", "")
 
-local Category = Tab:AddCategory("Maris Hub")
+local btns = serv:Channel("Buttons")
 
-local Button = Category:AddButton("Maris Hub", function()
-    local success, err = pcall(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/marisdeptrai/Script-Free/main/Maris-Hub.lua"))()
-    end)
-    if not success then
-        warn("Error al cargar el script:", err)
-    end
+btns:Button("Kill all", function()
+    DiscordLib:Notification("Notification", "Killed everyone!", "Okay!")
 end)
