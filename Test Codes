@@ -76,6 +76,17 @@ BloxFruitsTab:Button("Xero Hub", function()
     loadstring(game:HttpGet("https://xerohub.click/script/main.lua"))()
 end)
 
+-- Sección "Brookhaven"
+local BrookhavenTab = win:Tab("Brookhaven")
+
+BrookhavenTab:Button("Salazar Hub", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/err0r129/SalazarHubByTeamOsiris/main/Hades.lua'))()
+end)
+
+BrookhavenTab:Button("Redz Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/REDzHUB/main/REDzHUB"))()
+end)
+
 -- Sección "Scripts Universales"
 local ScriptsUniversalesTab = win:Tab("Scripts Universales")
 
@@ -89,19 +100,4 @@ end)
 
 ScriptsUniversalesTab:Button("Fly Gui V3", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/YSL3xKYU'))()
-end)
-
--- Sección "Brookhaven"
-local BrookhavenTab = win:Tab("Brookhaven")
-
-BrookhavenTab:Button("Salazar Hub", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/err0r129/SalazarHubByTeamOsiris/main/Hades.lua'))()
-end)
-
-BrookhavenTab:Button("Redz Hub", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/REDzHUB/main/REDzHUB"))()
-end)
-
-BrookhavenTab:Button("Ice Hub", function()
-    loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Ice-Hub-6414"))()
 end)
