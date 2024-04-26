@@ -1,0 +1,92 @@
+local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/Vape.txt"))()
+
+local win = lib:Window("Synergy Hub - Universal", Color3.fromRGB(44, 120, 224), Enum.KeyCode.RightControl)
+
+-- Sección "Inicio"
+local InicioTab = win:Tab("Inicio")
+
+InicioTab:Label("Creador: Xyraniz")
+InicioTab:Label("Usuario de Discord: xyraniz_official#0000")
+InicioTab:Label("Ayudante: angel_xt_1#0000")
+
+InicioTab:Button("Copiar Enlace Discord", function()
+    setclipboard("https://discord.gg/ZdeHeXPFuP")
+    print("¡Enlace copiado al portapapeles!")
+end)
+
+-- Sección "Blox Fruits"
+local BloxFruitsTab = win:Tab("Blox Fruits")
+
+BloxFruitsTab:Button("Annie Hub (Key)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/FreeeScripts/FREEHub/main/Loader", true))()
+end)
+
+BloxFruitsTab:Button("Blck Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/BLCK"))()
+end)
+
+BloxFruitsTab:Button("Fai Fao", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/PNguyen0199/Script/main/Fai-Fao.lua"))()
+end)
+
+BloxFruitsTab:Button("Hohohub (Key)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
+end)
+
+BloxFruitsTab:Button("Maru Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NinoGod/Free-Script/main/Maru-x-Hub-Free.lua"))()
+end)
+
+BloxFruitsTab:Button("Neon Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NIGHTHUBONTOP/Main/main/LoaderScript.lua"))()
+end)
+
+BloxFruitsTab:Button("Perd Hub (Key)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/PerdHub/Blosfruitscript/main/PerdLoader"))()
+end)
+
+BloxFruitsTab:Button("Redz Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+end)
+
+BloxFruitsTab:Button("Relz Hub (Key)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/farghii/relzhub/main/execute.hack", true))()
+end)
+
+BloxFruitsTab:Button("Spectrum X", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/xZPUHigh/Project-Spectrum/main/SpectrumX.lua"))()
+end)
+
+BloxFruitsTab:Button("Trez Hub (Key)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BestScriptEverr/Main-/main/Trezzyisbest", true))()
+end)
+
+BloxFruitsTab:Button("W-Azure", function()
+    getgenv().Team = "Pirates"
+    getgenv().SlowLoadUi = false
+    getgenv().FixCrash = false
+    getgenv().FixCrash2 = false
+    getgenv().ForceUseSilentAim = false
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
+end)
+
+BloxFruitsTab:Button("Xero Hub", function()
+    getgenv().Team = "Marines -- Pirates/Marines"
+    getgenv().Fix_Lag = true
+    loadstring(game:HttpGet("https://xerohub.click/script/main.lua"))()
+end)
+
+-- Sección "Scripts Universales"
+local ScriptsUniversalesTab = win:Tab("Scripts Universales")
+
+ScriptsUniversalesTab:Button("Keyboard", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GGH52lan/GGH52lan/main/keyboard.txt"))()
+end)
+
+ScriptsUniversalesTab:Button("Shiftlock", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/WQ9NPeDS"))()
+end)
+
+ScriptsUniversalesTab:Button("Fly Gui V3", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/YSL3xKYU'))()
+end)
