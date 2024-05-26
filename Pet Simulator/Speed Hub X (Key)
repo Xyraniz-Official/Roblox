@@ -1,0 +1,2 @@
+loadstring(game:HttpGet("https://HugeGames.io/ps99"))()
+-- GET KEY: https://hugegames.io/dash
