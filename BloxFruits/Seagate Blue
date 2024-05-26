@@ -1,0 +1,2 @@
+_G.Loader = true
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SeaBabyBF/seamain/main/SeaGateNextGenz"))()
