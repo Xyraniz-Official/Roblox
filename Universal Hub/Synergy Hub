@@ -1,0 +1,332 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Synergy Hub - Universal", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+-- Section "Home"
+local HomeTab = Window:MakeTab({
+    Name = "Home",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+HomeTab:AddLabel("Creator: Xyraniz")
+HomeTab:AddLabel("Discord User: xyraniz_official#0000")
+
+HomeTab:AddButton({
+    Name = "Copy Discord Link",
+    Callback = function()
+        setclipboard("https://discord.gg/ZdeHeXPFuP")
+        print("Link copied to clipboard!")
+    end
+})
+
+-- Section "AdoptMe"
+local AdoptMeTab = Window:MakeTab({
+    Name = "AdoptMe",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+AdoptMeTab:AddButton({
+    Name = "Unknown Script",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Ultra-Scripts/AdoptmeScript/main/AdoptmeScript/1XED629-adopt-me.lua"))()
+    end
+})
+
+-- Section "Blade Ball"
+local BladeBallTab = Window:MakeTab({
+    Name = "Blade Ball",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+BladeBallTab:AddButton({
+    Name = "Corolla Hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/7190000/Corolla-Hub/main/ch.lua"))()
+    end
+})
+
+BladeBallTab:AddButton({
+    Name = "Raxor Hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/RaxorHUd/RaXorHUD/main/V2/RaXorScripts"))()
+    end
+})
+
+-- Section "Blox Fruits"
+local BloxFruitsTab = Window:MakeTab({
+    Name = "Blox Fruits",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+BloxFruitsTab:AddButton({
+    Name = "Annie Hub (Key)",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/FreeeScripts/FREEHub/main/Loader", true))()
+    end
+})
+
+BloxFruitsTab:AddButton({
+    Name = "Blck Hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/BLCK"))()
+    end
+})
+
+BloxFruitsTab:AddButton({
+    Name = "Fai Fao",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/PNguyen0199/Script/main/Fai-Fao.lua"))()
+    end
+})
+
+BloxFruitsTab:AddButton({
+    Name = "Hohohub (Key)",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
+    end
+})
+
+BloxFruitsTab:AddButton({
+    Name = "Maru Hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/NinoGod/Free-Script/main/Maru-x-Hub-Free.lua"))()
+    end
+})
+
+BloxFruitsTab:AddButton({
+    Name = "Neon Hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/NIGHTHUBONTOP/Main/main/LoaderScript.lua"))()
+    end
+})
+
+BloxFruitsTab:AddButton({
+    Name = "Perd Hub (Key)",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/PerdHub/Blosfruitscript/main/PerdLoader"))()
+    end
+})
+
+BloxFruitsTab:AddButton({
+    Name = "Redz Hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+    end
+})
+
+BloxFruitsTab:AddButton({
+    Name = "Relz Hub (Key)",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/farghii/relzhub/main/execute.hack", true))()
+    end
+})
+
+BloxFruitsTab:AddButton({
+    Name = "Spectrum X",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/xZPUHigh/Project-Spectrum/main/SpectrumX.lua"))()
+    end
+})
+
+BloxFruitsTab:AddButton({
+    Name = "Trez Hub (Key)",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/BestScriptEverr/Main-/main/Trezzyisbest", true))()
+    end
+})
+
+BloxFruitsTab:AddButton({
+    Name = "W-Azure",
+    Callback = function()
+        getgenv().Team = "Pirates"
+        getgenv().SlowLoadUi = false
+        getgenv().FixCrash = false
+        getgenv().FixCrash2 = false
+        getgenv().ForceUseSilentAim = false
+        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
+    end
+})
+
+BloxFruitsTab:AddButton({
+    Name = "Xero Hub",
+    Callback = function()
+        getgenv().Team = "Marines -- Pirates/Marines"
+        getgenv().Fix_Lag = true
+        loadstring(game:HttpGet("https://xerohub.click/script/main.lua"))()
+    end
+})
+
+
+-- Section "Brookhaven"
+local BrookhavenTab = Window:MakeTab({
+    Name = "Brookhaven",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+BrookhavenTab:AddButton({
+    Name = "Imperial Hub",
+    Callback = function()
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/Trev0rZ/LoaderM/main/ImperialHub-Working.lua"),true))()
+    end
+})
+
+BrookhavenTab:AddButton({
+    Name = "Jul Hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-JulHub-New-IceHub-12025"))()
+    end
+})
+
+BrookhavenTab:AddButton({
+    Name = "Redz Hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/REDzHUB/main/REDzHUB"))()
+    end
+})
+
+
+-- Section "Build A Boat For Treasure"
+local BuildBoatTab = Window:MakeTab({
+    Name = "Build A Boat For Treasure",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+BuildBoatTab:AddButton({
+    Name = "xQuartyz",
+    Callback = function()
+        loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
+    end
+})
+
+
+-- Section "Da Hood"
+local DaHoodTab = Window:MakeTab({
+    Name = "Da Hood",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+DaHoodTab:AddButton({
+    Name = "SwagMode",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
+    end
+})
+
+DaHoodTab:AddButton({
+    Name = "Faded",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
+    end
+})
+
+DaHoodTab:AddButton({
+    Name = "SpaceYes",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/SpaceYes/Lua/Main/DaHood.Lua'))()
+    end
+})
+
+-- Section "Muscle Legends"
+local MuscleLegendsTab = Window:MakeTab({
+    Name = "Muscle Legends",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+MuscleLegendsTab:AddButton({
+    Name = "Speed Hub X",
+    Callback = function()
+        loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Speed-Hub-X/main/SpeedHubX"))()
+    end
+})
+
+-- Section "Natural Disaster"
+local NaturalDisasterTab = Window:MakeTab({
+    Name = "Natural Disaster",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+NaturalDisasterTab:AddButton({
+    Name = "Unknown Script",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/LoadstringUjHI6RQpz2o8", true))()
+    end
+})
+
+NaturalDisasterTab:AddButton({
+    Name = "Unknown Script 2",
+    Callback = function()
+        local c = "K3Ep6gX2/raw"
+        loadstring(game:HttpGet(('https://pastefy.app/'..c),true))()
+    end
+})
+
+-- Section "Universal Scripts"
+local UniversalScriptsTab = Window:MakeTab({
+    Name = "Universal Scripts",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+UniversalScriptsTab:AddButton({
+    Name = "Keyboard",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/GGH52lan/GGH52lan/main/keyboard.txt"))()
+    end
+})
+
+UniversalScriptsTab:AddButton({
+    Name = "Shiftlock",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/WQ9NY7WL"))()
+    end
+})
+
+UniversalScriptsTab:AddButton({
+    Name = "Dex",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/peyton2465/Dex/master/out.lua"))()
+    end
+})
+
+UniversalScriptsTab:AddButton({
+    Name = "Infinity Yield FE",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+    end
+})
+
+UniversalScriptsTab:AddButton({
+    Name = "ESP",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/ESP"))()
+    end
+})
+
+UniversalScriptsTab:AddButton({
+    Name = "CMD-X",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source"))()
+    end
+})
+
+UniversalScriptsTab:AddButton({
+    Name = "Hitbox",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/wT6shGbg"))()
+    end
+})
+
+UniversalScriptsTab:AddButton({
+    Name = "Dark Dex",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/DarkHubHAX/DarkHubV3/main/DarkDexV3.lua"))()
+    end
+})
