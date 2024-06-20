@@ -19,6 +19,29 @@ HomeTab:AddButton({
     end
 })
 
+
+-- Section "Arsenal"
+local ArsenalTab = Window:MakeTab({
+    Name = "Arsenal",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+ArsenalTab:AddButton({
+    Name = "Tbao Hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubArsenal"))()
+    end
+})
+
+ArsenalTab:AddButton({
+    Name = "Uraset Hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/yoboyghxst/Uraset/main/Uraset.lua"))()
+    end
+})
+
+
 -- Section "AdoptMe"
 local AdoptMeTab = Window:MakeTab({
     Name = "AdoptMe",
@@ -33,6 +56,7 @@ AdoptMeTab:AddButton({
     end
 })
 
+
 -- Section "Blade Ball"
 local BladeBallTab = Window:MakeTab({
     Name = "Blade Ball",
@@ -41,9 +65,9 @@ local BladeBallTab = Window:MakeTab({
 })
 
 BladeBallTab:AddButton({
-    Name = "Corolla Hub",
+    Name = "Milenio Hub",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/7190000/Corolla-Hub/main/ch.lua"))()
+        loadstring(game:HttpGet("https://scriptblox.com/raw/UPD-Blade-Ball-Milenio-X-Hub-Suport-Icongnito-No-Key-System-13654"))()
     end
 })
 
@@ -53,6 +77,7 @@ BladeBallTab:AddButton({
         loadstring(game:HttpGet("https://raw.githubusercontent.com/RaxorHUd/RaXorHUD/main/V2/RaXorScripts"))()
     end
 })
+
 
 -- Section "Blox Fruits"
 local BloxFruitsTab = Window:MakeTab({
@@ -232,6 +257,7 @@ DaHoodTab:AddButton({
     end
 })
 
+
 -- Section "Muscle Legends"
 local MuscleLegendsTab = Window:MakeTab({
     Name = "Muscle Legends",
@@ -245,6 +271,7 @@ MuscleLegendsTab:AddButton({
         loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Speed-Hub-X/main/SpeedHubX"))()
     end
 })
+
 
 -- Section "Natural Disaster"
 local NaturalDisasterTab = Window:MakeTab({
@@ -300,20 +327,6 @@ UniversalScriptsTab:AddButton({
     Name = "Infinity Yield FE",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
-    end
-})
-
-UniversalScriptsTab:AddButton({
-    Name = "ESP",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/ESP"))()
-    end
-})
-
-UniversalScriptsTab:AddButton({
-    Name = "CMD-X",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source"))()
     end
 })
 
