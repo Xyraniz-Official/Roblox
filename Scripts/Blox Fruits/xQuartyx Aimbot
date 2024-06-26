@@ -1,0 +1,3 @@
+getgenv().Mode = "PVP"
+getgenv().Team = "Pirates" -- Options "Marines", "Pirates"
+loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
